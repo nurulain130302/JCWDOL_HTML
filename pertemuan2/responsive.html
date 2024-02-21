@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cornsilk;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+
+        /* TAILWIND utility first */
+        
+        @media screen and(min-width: 320px){
+
+            body{
+                background-color: darkolivegreen;
+            }
+            .box{
+                background-color: cadetblue;
+            }
+            
+        }
+        @media screen and(min-width: 320px) and (max-width:788px){ 
+
+            body{
+                background-color: cornflowerblue;
+            }
+            .box{
+                background-color: crimson;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
