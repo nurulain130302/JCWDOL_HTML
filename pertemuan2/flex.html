@@ -16,38 +16,24 @@
         }
 
         #content{
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            width: 400px;
+            height: 400px;
+            overflow: scroll;
 
-            grid-gap: 20px;
-
-            max-width: 960px;
-            margin: 0 auto;
-        }
-        .kotak1 {
-            grid-column: 1 / 4;
-        }
-        .kotak2 {
-            grid-column: 4 / 10;
-        }
-        .kotak3 {
-            /* grid-row-start: 2;
-            grid-row-end: 4; */
-
-            grid-row: 2/4;
-
-            grid-column-start: 1;
-            grid-column-end: 5;
+            display: flex; 
+            flex-wrap: nowrap;
+            flex-direction: column-reverse;
+            justify-items: center;
+            gap: 20px;
         }
 
         #content div{
             background-color: lightskyblue;
             padding: 30px;
             border: 1px solid black;
-/* 
+
             width: 50px;
-            height: 50px; */
+            height: 50px;
         }
 
         #content div:nth-child(even){
@@ -70,8 +56,14 @@
         <div class="kotak11">11</div>
     </div>
 
-    <!-- <div style="text-wrap: nowrap; text-overflow:ellipsis; width: 100px;height: 100px; border: 1px solid bisque;">
-        lorem 
-    </div> -->
+    <div style="text-wrap:nowrap; width: 400px; height: 40px; border: 1px solid bisque;overflow: hidden;">
+        Manajemen sumber daya manusia (SDM) strategis memainkan peran penting dalam implementasi strategi organisasi.
+        SDM harus sejajar dengan strategi organisasi untuk mencapai tujuan yang diinginkan.
+        Jurnal ini membahas berbagai cara di mana SDM dapat digunakan untuk mendukung strategi organisasi, seperti:
+        Perencanaan SDM: Memastikan organisasi memiliki karyawan dengan keterampilan dan bakat yang tepat.
+        Pengelolaan kinerja: Memotivasi dan mendorong karyawan untuk mencapai tujuan organisasi.
+        Pembelajaran dan pengembangan: Meningkatkan keterampilan dan pengetahuan karyawan.
+        
+    </div>
 </body>
 </html>
